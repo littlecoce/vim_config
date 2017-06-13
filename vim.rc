@@ -1,0 +1,18 @@
+source ~/vim_config/vim_bindings.conf
+source ~/vim_config/vundle_plugins.conf
+source ~/vim_config/vim_python.conf
+
+set relativenumber
+set number
+set visualbell
+set t_vb=
+set clipboard=unnamed
+
+" Find options "
+set path+=**
+set wildmenu
+
+" Python IDE Settings "
+set foldmethod=indent
+set foldlevel=99
+set encoding=utf-8
