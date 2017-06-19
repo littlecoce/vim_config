@@ -5,6 +5,7 @@ source ~/vim_config/vim_python.conf
 " MISC "
 set relativenumber
 set number
+syntax on
 set visualbell
 set t_vb=
 set clipboard=unnamed
