@@ -9,6 +9,7 @@ set visualbell
 set t_vb=
 set clipboard=unnamed
 au BufNewFile,BufRead vim*.conf,*.rc set filetype=vim
+au BufNewFile,BufRead vundle*.conf set filetype=vim
 
 " Find options "
 set path+=**
