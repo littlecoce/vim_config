@@ -8,9 +8,11 @@ set number
 syntax on
 set visualbell
 set t_vb=
-set clipboard=unnamed
+set clipboard=unnamedplus
 au BufNewFile,BufRead vim*.conf,*.rc set filetype=vim
 au BufNewFile,BufRead vundle*.conf set filetype=vim
+set splitbelow
+set splitright
 
 " Find options "
 set path+=**
