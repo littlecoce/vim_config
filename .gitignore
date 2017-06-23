@@ -40,3 +40,6 @@ Thumbs.db
 #############
 .swp
 
+# MyPy #
+########
+.mypy_cache/
