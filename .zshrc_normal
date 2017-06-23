@@ -1,0 +1,19 @@
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _complete _ignored
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' menu select=long
+zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
+zstyle :compinstall filename '/home/david/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+setopt nobeep
+unsetopt nomatch
+
+alias ls='ls --color'
+LS_COLORS='di=1;34:fi=0;92:ln=0;96:so=1;4;31:or=1;4;90:mi=1;4;100:ex=1;32'
+export LS_COLORS
+[[ "$TERM" == "xterm" ]] && export TERM=xterm-256color
