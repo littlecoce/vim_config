@@ -1,4 +1,4 @@
-source ~/.zshrc_normal
+source ~/vim_config/.zshrc_normal
 
 autoload -U colors && colors
 if [ -z "$TMUX" ] 
