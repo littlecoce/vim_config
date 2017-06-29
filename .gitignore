@@ -44,4 +44,3 @@ Thumbs.db
 ########
 .mypy_cache/
 .plugins/
-.Vundle.vim/
