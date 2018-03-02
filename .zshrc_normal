@@ -11,7 +11,7 @@ compinit
 # End of lines added by compinstall
 
 setopt nobeep
-unsetopt nomatch
+unsetopt nomatch autoremoveslash
 
 alias ls='ls --color'
 LS_COLORS='di=1;34:fi=0;92:ln=0;96:so=1;4;31:or=1;4;90:mi=1;4;100:ex=1;32:ow=1;34'
