@@ -3,7 +3,7 @@ source ~/vim_config/vundle_plugins.conf
 source ~/vim_config/vim_python.conf
 
 " MISC "
-set relativenumber
+" set relativenumber
 set number
 syntax on
 set visualbell
@@ -13,8 +13,8 @@ au BufNewFile,BufRead vim*.conf,*.rc set filetype=vim
 au BufNewFile,BufRead vundle*.conf set filetype=vim
 set splitbelow
 set splitright
+set backspace=2 
 
 " Find options "
 set path+=**
 set wildmenu
-
