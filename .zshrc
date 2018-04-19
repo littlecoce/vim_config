@@ -7,3 +7,4 @@ then
 else 
 	PS1="%{$fg[yellow]%}~>%{$reset_color%} "
 fi
+export PATH=$PATH:/home/nonce/vms/scripts/
