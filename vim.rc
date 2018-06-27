@@ -14,6 +14,7 @@ au BufNewFile,BufRead vundle*.conf set filetype=vim
 set splitbelow
 set splitright
 set backspace=2 
+set enc=utf-8
 
 " Find options "
 set path+=**
