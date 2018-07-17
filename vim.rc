@@ -15,7 +15,6 @@ set splitbelow
 set splitright
 set backspace=2 
 set enc=utf-8
-
-" Find options "
-set path+=**
+set termguicolors
+" set t_Co=888
 set wildmenu

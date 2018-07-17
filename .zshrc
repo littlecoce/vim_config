@@ -20,8 +20,8 @@ done
 
 if [ -z "$TMUX" ] 
 then
-# 	PS1="%{$fg[blue]%}%n%{$reset_color%}@%m: %{$fg[yellow]%}%~ %{$reset_color%}%% "
-	PS1="$FG[019]%n%{$reset_color%}@%m: $FG[214]%~ %{$reset_color%}% "
+	PS1="%{$fg[blue]%}%n%{$reset_color%}@%m: %{$fg[yellow]%}%~ %{$reset_color%}%% "
+# 	PS1="$FG[019]%n%{$reset_color%}@%m: $FG[214]%~ %{$reset_color%}% "
 else 
 	PS1="%{$fg[yellow]%}~>%{$reset_color%} "
 fi
