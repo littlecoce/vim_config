@@ -25,3 +25,7 @@ then
 else 
 	PS1="%{$fg[yellow]%}~>%{$reset_color%} "
 fi
+
+if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+  exec startx
+fi
