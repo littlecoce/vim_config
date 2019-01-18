@@ -13,7 +13,10 @@ compinit
 setopt nobeep
 unsetopt nomatch autoremoveslash
 
-alias ls='ls --color'
+#Fuzzy search and completion
+zstyle ':completion:*' matcher-list 'r:|?=** m:{a-z\-}={A-Z\_}'
+
+alias ls='ls --color -F'
 alias man='LANG=C man'
 alias passpush='pass git push origin master'
 alias passpull='pass git pull origin master'
@@ -24,6 +27,10 @@ export LS_COLORS
 export LC_ALL="en_US.UTF-8"
 export LC_LANG="en_US.UTF-8"
 export LC_LANGUAGE="en_US.UTF-8"
+
+# Password environment variables
+export PASSWORD_STORE_CLIP_TIME="5"
+export PASSWORD_STORE_GENERATED_LENGTH="30"
 
 [[ "$TERM" == "xterm" ]] && export TERM=xterm-256color
 [[ "$TERM" == "xterm-termite" ]] && alias ssh="TERM=xterm-256color ssh"
