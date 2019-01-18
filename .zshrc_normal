@@ -13,7 +13,10 @@ compinit
 setopt nobeep
 unsetopt nomatch autoremoveslash
 
-alias ls='ls --color'
+#Fuzzy search and completion
+zstyle ':completion:*' matcher-list 'r:|?=** m:{a-z\-}={A-Z\_}'
+
+alias ls='ls --color -F'
 alias man='LANG=C man'
 alias passpush='pass git push origin master'
 alias passpull='pass git pull origin master'
