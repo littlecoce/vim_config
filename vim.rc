@@ -1,4 +1,5 @@
 source ~/vim_config/vim_bindings.conf
+source ~/vim_config/vim_bindings_mail.conf
 source ~/vim_config/vundle_plugins.conf
 source ~/vim_config/vim_python.conf
 
