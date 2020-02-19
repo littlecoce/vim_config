@@ -18,6 +18,9 @@ for color in {000..255}; do
     BG[$color]="%{[48;5;${color}m%}"
 done
 
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
 if [ -z "$TMUX" ] 
 then
 	PS1="%{$fg[blue]%}%n%{$reset_color%}@%m: %{$fg[yellow]%}%~ %{$reset_color%}%% "

@@ -1,7 +1,11 @@
+" Force v3
+if has('python3')
+endif
+
+autocmd FileType mail source ~/vim_config/vim_mail.conf
+autocmd FileType python source ~/vim_config/vim_python.conf
 source ~/vim_config/vim_bindings.conf
-source ~/vim_config/vim_bindings_mail.conf
 source ~/vim_config/vundle_plugins.conf
-source ~/vim_config/vim_python.conf
 
 " MISC "
 " set relativenumber
@@ -19,10 +23,11 @@ set enc=utf-8
 set termguicolors
 " set t_Co=888
 set wildmenu
+set spelllang=de
 
 " Add format option 'w' to add trailing white space, indicating that paragraph
 " continues on next line. This is to be used with mutt's 'text_flowed' option.
 augroup mail_trailing_whitespace " {
     autocmd!
-    autocmd FileType mail setlocal formatoptions+=w
+    autocmd FileType mail setlocal formatoptions+=w spell colorcolumn=+1
 augroup END " }
