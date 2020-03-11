@@ -13,6 +13,7 @@ set number
 syntax on
 set visualbell
 set t_vb=
+set t_ut=
 set clipboard=unnamedplus
 au BufNewFile,BufRead vim*.conf,*.rc set filetype=vim
 au BufNewFile,BufRead vundle*.conf set filetype=vim
