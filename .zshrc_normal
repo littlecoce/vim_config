@@ -24,6 +24,7 @@ alias qemu=qemu-system-x86_64
 
 LS_COLORS='di=1;34:fi=0;92:ln=0;96:so=1;4;31:or=1;4;90:mi=1;4;100:ex=1;32:ow=1;34'
 
+export EDITOR=vim
 export BROWSER=firefox
 export LS_COLORS
 export LC_ALL="en_US.UTF-8"
